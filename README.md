@@ -33,7 +33,7 @@ Install LitMotion first, then this package. In **Window > Package Manager > + > 
 
 ```
 https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion
-https://github.com/your-name/orbit-camera.git
+https://github.com/Varun-Khatri/OrbitCamera.git
 ```
 
 Or add both to `Packages/manifest.json`:
@@ -42,7 +42,7 @@ Or add both to `Packages/manifest.json`:
 {
   "dependencies": {
     "com.annulusgames.lit-motion": "https://github.com/annulusgames/LitMotion.git?path=src/LitMotion/Assets/LitMotion",
-    "com.example.orbit-camera": "https://github.com/your-name/orbit-camera.git"
+    "com.vk.OrbitCamera": "https://github.com/Varun-Khatri/OrbitCamera"
   }
 }
 ```
