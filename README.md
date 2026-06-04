@@ -5,7 +5,7 @@ gamepad**, plus zoom and **runtime focus-swapping** with smooth eased transition
 vehicle configurators, product showcases, and real-estate walkarounds.
 
 The core is **dependency-free pure C#** with a **single MonoBehaviour**. Third-party integrations
-(LitMotion, the Input System, Reflex) live in thin, optional assemblies that are auto-detected and
+(LitMotion and the Input System) live in thin, optional assemblies that are auto-detected and
 compiled in only when their package is present.
 
 ---
@@ -16,7 +16,6 @@ compiled in only when their package is present.
 |---|---|---|
 | **LitMotion v2** (`com.annulusgames.lit-motion`) | **Yes** | Focus transitions in `OrbitCameraBehaviour` |
 | **Input System** (`com.unity.inputsystem`) | Optional | `OrbitCamera.InputSystem` assembly |
-| **Reflex** (`com.gustavopsantos.reflex`) | Optional | `OrbitCamera.Reflex` assembly |
 
 Unity **2021.3+**.
 
@@ -72,10 +71,9 @@ Try the **Basic Showcase** sample (Package Manager > this package > Samples > Im
 ## Assembly layout
 
 ```
-OrbitCamera                      Runtime/                 core (refs LitMotion only)
-OrbitCamera.InputSystem          Runtime/InputSystem/     optional; compiles iff Input System present
-OrbitCamera.Reflex               Integrations/Reflex/     optional; compiles iff Reflex present
-OrbitCamera.Samples.BasicShowcase Samples~/BasicShowcase/ sample
+VK.OrbitCamera                      Runtime/                 core (refs LitMotion only)
+VK.OrbitCamera.InputSystem          Runtime/InputSystem/     optional; compiles iff Input System present
+VK.OrbitCamera.Samples.BasicShowcase Samples~/BasicShowcase/ sample
 ```
 
 The optional assemblies use `versionDefines` + `defineConstraints`, so they are skipped entirely
@@ -100,13 +98,6 @@ src.AddOrbit(new Vector2(dx, dy));   // pixel-ish deltas; normalized internally
 src.AddZoom(scrollOrPinchDelta);
 src.AddPan(panDelta);
 ```
-
-## Wiring with Reflex
-
-Add `OrbitCameraInstaller` to a scope (registers settings, input source, event publisher) and put
-`OrbitCameraBootstrap` next to `OrbitCameraBehaviour`. The bootstrap receives dependencies via
-`[Inject]` and calls `Initialize(...)`, so the camera component itself stays DI-free.
-
 ---
 
 ## Performance
