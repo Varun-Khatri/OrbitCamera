@@ -1,0 +1,25 @@
+{
+  "name": "VK.OrbitCamera.InputSystem",
+  "rootNamespace": "VK.OrbitCamera.InputSystem",
+  "references": [
+    "VK.OrbitCamera",
+    "Unity.InputSystem"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "ORBITCAMERA_INPUTSYSTEM"
+  ],
+  "versionDefines": [
+    {
+      "name": "com.unity.inputsystem",
+      "expression": "1.0.0",
+      "define": "ORBITCAMERA_INPUTSYSTEM"
+    }
+  ],
+  "noEngineReferences": false
+}

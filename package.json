@@ -1,0 +1,28 @@
+{
+    "name": "com.vk.orbit-camera",
+    "version": "0.1.0",
+    "displayName": "Orbit Camera",
+    "description": "Generic, near-zero-allocation orbiting showcase camera for Unity. Orbit an object with mouse, touch, or gamepad; zoom; and swap the focus object at runtime with smooth eased transitions. Built for vehicle configurators, product showcases, and real-estate walkarounds.\n\nRequires LitMotion. Optional integrations: Unity Input System and Reflex DI (auto-detected).",
+    "unity": "2021.3",
+    "documentationUrl": "https://github.com/Varun-Khatri/OrbitCamera",
+    "changelogUrl": "https://github.com/Varun-Khatri/OrbitCamera/blob/main/CHANGELOG.md",
+    "licensesUrl": "https://github.com/Varun-Khatri/OrbitCamera/blob/main/LICENSE.md",
+    "keywords": [
+        "camera",
+        "orbit",
+        "showcase",
+        "configurator",
+        "turntable"
+    ],
+    "author": {
+        "name": "Varun Khatri",
+        "url": "https://github.com/Varun-Khatri/OrbitCamera"
+    },
+    "samples": [
+        {
+            "displayName": "Basic Showcase",
+            "description": "A runtime-built demo: orbit a few primitives, click/tap to refocus and auto-frame. No scene wiring required.",
+            "path": "Samples~/BasicShowcase"
+        }
+    ]
+}
