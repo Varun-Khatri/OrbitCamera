@@ -1,8 +1,6 @@
-# Basic Showcase (sample)
+# Basic Showcase 
 
-Two ways to use this sample.
-
-## A. Zero-wiring runtime demo (fastest)
+## A. Zero-wiring runtime demo 
 
 1. Create a new empty scene.
 2. Create an empty GameObject and add **Orbit Showcase Bootstrap**
@@ -17,7 +15,7 @@ orbit, wheel/pinch/triggers to zoom, click an object to smoothly refocus and aut
 > for the click raycast). If you don't use the Input System, delete this sample's asmdef constraint
 > or drive a `ManualOrbitSource` from your own input instead.
 
-## B. Build a real scene by hand (what to ship)
+## B. Build a real scene by hand 
 
 Use the bootstrap as a recipe:
 
@@ -28,6 +26,4 @@ Use the bootstrap as a recipe:
    - tune **Settings** (orbit speed, pitch/zoom clamps, smoothing).
 3. Leave **Create Default Input Source** on, or wire input yourself (see the package README).
 4. Optionally add `OrbitFocusClickExample` to the Camera for click-to-refocus.
-5. **File > Save As** to store it as e.g. `Demo.unity`, and commit it under the sample folder if you
-   want it versioned (note: anything under `Samples~` is hidden from the Editor until imported via
-   the Package Manager).
+
